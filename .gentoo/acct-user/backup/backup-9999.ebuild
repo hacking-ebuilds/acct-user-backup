@@ -7,6 +7,8 @@ inherit acct-user
 
 DESCRIPTION="User for backup system"
 ACCT_USER_ID=900
-ACCT_USER_GROUPS=( nogroup )
+ACCT_USER_GROUPS=( backup )
+ACCT_USER_HOME=/home/backup
+ACCT_USER_SHELL=/bin/bash
 
 acct-user_add_deps
